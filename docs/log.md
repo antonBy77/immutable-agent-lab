@@ -21,6 +21,7 @@
   дистру — вопрос Антону (headless vs десктоп); добавил bootstrap.sh (ADR-008);
   no-new-privileges + cap_drop=ALL по умолчанию. Текст: turns/01-hermes.md
 - **Итог:** ADR-002/003/005/006/007 приняты консенсусом.
-- **ADR-001 закрыт:** Антон решил — ноут остаётся десктопом → **Fedora Silverblue**
-  (Kinoite при выборе KDE). MicroOS отклонён (выгоден только headless).
+- **ADR-001 закрыт:** Антон решил — ноут остаётся десктопом → **Fedora Atomic:
+  Cosmic Atomic** (COSMIC-спин; та же rpm-ostree-база, что Silverblue).
+  MicroOS отклонён (выгоден только headless).
 - ADR-008 (bootstrap.sh) на рассмотрении. Ждём ходы janclod/zcode.

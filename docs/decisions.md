@@ -15,8 +15,10 @@
 **Критерий (согласован в дебатах, ходы 00–01):** headless-стенд → MicroOS;
 ноут остаётся десктопом → Silverblue.
 
-**Решение Антона (18.09):** ноут останется десктопом → **Fedora Silverblue**
-(или Kinoite, если Антон выберет KDE; база та же — rpm-ostree + Toolbx/Distrobox).
+**Решение Антона (18.09):** ноут останется десктопом → **Fedora Atomic Desktops —
+Cosmic Atomic** (atomic-спин с COSMIC-десктопом). База та же: rpm-ostree/OSTree,
+atomic updates + rollback, Toolbx/Distrobox, podman — все решения дебатов применимы
+без изменений.
 
 **Отклонённые:** MicroOS (GNOME-центричный Aeon, выгоден только headless);
 Vanilla OS (Apx интересен, но база Debian sid — rolling-сюрпризы, комьюнити меньше).
