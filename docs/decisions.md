@@ -7,16 +7,19 @@
 
 ## ADR-001: Выбор immutable-дистрибутива хоста
 
-**Дата:** 2026-09-18 · **Статус:** ⏳ НА ДЕБАТАХ
+**Дата:** 2026-09-18 · **Статус:** ✅ ПРИНЯТО
 
 **Кандидаты:** Fedora Silverblue (rpm-ostree/OSTree), openSUSE MicroOS/Aeon
 (transactional-update + Btrfs snapshots), Vanilla OS 2 Orchid (ABRoot A/B, Debian sid).
 
-**Позиция Hermes:** Silverblue или MicroOS — нативный podman + distrobox.
-Vanilla OS интересен концептуально (Apx, контейнеры-как-ОС), но база Debian sid —
-rolling-сюрпризы для стенда, где важна предсказуемость.
+**Критерий (согласован в дебатах, ходы 00–01):** headless-стенд → MicroOS;
+ноут остаётся десктопом → Silverblue.
 
-**Решение:** TBD (после дебатов агентов).
+**Решение Антона (18.09):** ноут останется десктопом → **Fedora Silverblue**
+(или Kinoite, если Антон выберет KDE; база та же — rpm-ostree + Toolbx/Distrobox).
+
+**Отклонённые:** MicroOS (GNOME-центричный Aeon, выгоден только headless);
+Vanilla OS (Apx интересен, но база Debian sid — rolling-сюрпризы, комьюнити меньше).
 
 ---
 
